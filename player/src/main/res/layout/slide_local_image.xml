@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SlideModeActivity">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:onClick="backPreviousActivity"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/local_image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/slide_mode"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/all_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@id/local_image_title"
+            android:textColor="@android:color/white"
+            android:text="@string/v2_user_title_select"
+            android:onClick="selectAll"
+            android:clickable="true"
+            android:textSize="14sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/white"
+            android:text="@string/ok"
+            android:onClick="confirmPlaySlideMode"
+            android:clickable="true"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/local_image_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:numColumns="2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:layout_margin="5dp"
+        />
+</RelativeLayout>

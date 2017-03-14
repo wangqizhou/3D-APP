@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="no_color">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="info_text">#ffffff</color>
+    <color name="bg_actionbar">#FF03A9F4</color>
+    <color name="bg_fragment">#FFE9E9E9</color>
+    <color name="bg_tab">#FFFAFAFA</color>
+
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#03A9F4</color>
+    <color name="colorAccent">#33b5e5</color>
+    <color name="tabhost_background">#F6F6F6</color>
+
+    <color name="tag_indicator_vr">#00D5B4</color>
+    <color name="tag_indicator_3d">#008FFE</color>
+</resources>

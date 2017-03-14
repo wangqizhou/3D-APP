@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.LocalResourceActivity">
+
+    <RelativeLayout
+        android:id="@+id/local_resource_toolbar"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:onClick="backPreviousActivity"
+            android:src="@drawable/btn_back" />
+        <TextView
+            android:id="@+id/local_image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/v2_local_resource"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/slide_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:textColor="@android:color/white"
+            android:text="@string/slide_mode"
+            android:onClick="slideMode"
+            android:clickable="true"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/local_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@id/local_resource_toolbar"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+     />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/local_view_pager"
+        android:layout_below="@id/local_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

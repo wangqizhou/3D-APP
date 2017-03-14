@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+    <com.evistek.gallery.view.RoundProgressBar
+        android:id="@+id/update_progress"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dip"
+        android_custom:roundColor="#D1D1D1"
+        android_custom:roundProgressColor="#00BFFF"
+        android_custom:roundWidth="5dip"
+        android_custom:textColor="#000000"
+        android_custom:textSize="18sp" />
+
+</RelativeLayout>

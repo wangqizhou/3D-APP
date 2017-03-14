@@ -1,0 +1,15 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/local_video_swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.fragment.LocalVideoFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/local_video_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.StereoVideoDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/stereo_video_detail_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="202dp"
+                    android:scaleType="fitXY"/>
+                <ImageView
+                    android:id="@+id/stereo_video_detail_play"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/download"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                >
+                <TextView
+                    android:id="@+id/stereo_video_detail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/primary_text_light"
+                    />
+
+                <ImageView
+                    android:id="@+id/stereo_video_detail_favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/favorite_disabled"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/detail_actors"/>
+
+                <TextView
+                    android:id="@+id/stereo_video_detail_actors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="10dp"
+                    android:maxLines="1"
+                    android:ellipsize="middle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/detail_time"/>
+
+                <TextView
+                    android:id="@+id/stereo_video_detail_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/detail_location"/>
+
+                <TextView
+                    android:id="@+id/stereo_video_detail_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/stereo_video_detail_play_count_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/detail_play_count"/>
+
+                <TextView
+                    android:id="@+id/stereo_video_detail_play_count"
+                    android:layout_toEndOf="@+id/stereo_video_detail_play_count_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#EDEDED"
+                >
+            </View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/detail_intro"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/stereo_video_detail_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="10dp"
+                android:lineSpacingMultiplier="1.5"
+                android:text=""
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/stereo_video_detail_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/stereo_video_detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/detail_title"
+            android:textSize="16sp"
+            android:textColor="@android:color/primary_text_dark"/>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="menu">
+        <item>片源左右排列</item>
+        <item>人眼跟踪</item>
+    </string-array>
+    <string-array name="menuLR">
+        <item>左右</item>
+        <item>右左</item>
+    </string-array>
+    <string-array name="menuOnOff">
+        <item>关闭</item>
+        <item>打开</item>
+    </string-array>
+
+</resources>

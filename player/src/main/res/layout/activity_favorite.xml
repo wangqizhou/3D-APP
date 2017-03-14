@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.FavoriteActivity">
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/v2_user_favorite_backbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/btn_back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v2_save"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:id="@+id/v2_user_favorite_listitem_delete"
+            android:text="@string/v2_user_title_delete"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/v2_user_favorite_listitem_selectall"
+            android:text="@string/v2_user_title_select"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/v2_user_favorite_listitem_delete"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/v2_user_favorite_listitem_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:text="@string/v2_user_title_edit"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:clickable="true"
+            />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/v2_user_favorite_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"/>
+
+    <include
+        android:id="@+id/v2_user_favorite_empty_view"
+        layout="@layout/empty" />
+</LinearLayout>

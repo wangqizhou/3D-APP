@@ -1,0 +1,52 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:actionBarStyle">@style/my_actionbar_style</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="MenuButtonStyle" parent="AppBaseTheme">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#D99E9E9E</item>
+        <item name="android:background">@drawable/selector_tab</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="my_actionbar_style" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#647b97</item>
+        <item name="android:titleTextStyle">@style/AcBar_titleStyle</item>
+    </style>
+    <style name="AcBar_titleStyle">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="AppTheme2" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:seekBarStyle">@style/SeekBarStyle</item>
+    </style>
+
+    <style name="SeekBarStyle" parent="android:Widget.Holo.Light.SeekBar">
+        <item name="android:progressDrawable">@drawable/seekbar_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/seekbar_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:thumb">@drawable/seekbar_scrubber_control_selector_holo_light</item>
+    </style>
+</resources>

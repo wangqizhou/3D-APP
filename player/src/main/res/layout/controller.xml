@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_ctrl_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:paddingBottom="5dip" >
+
+        <ImageButton
+            android:id="@+id/controler_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_volume" />
+
+        <ImageButton
+            android:id="@+id/controler_depth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:paddingRight="10dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_depth" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_ctrl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:background="@drawable/bg_controller"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_ctrl_progress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/controler_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="00:00:00"
+                android:textColor="@color/white" />
+
+            <SeekBar
+                android:id="@+id/controler_seekbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:progressDrawable="@drawable/bg_progressbar"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip" />
+
+            <TextView
+                android:id="@+id/controler_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="00:00:00"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip" >
+
+            <LinearLayout
+                android:id="@+id/layout_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="6.5"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/controler_scale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5"
+                    android:background="@color/no_color"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_controller_scale_fullscreen" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+
+                <ImageButton
+                    android:id="@+id/controler_previous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/no_color"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_controller_pre" />
+
+                <ImageButton
+                    android:id="@+id/controler_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/no_color"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_controller_pause" />
+
+                <ImageButton
+                    android:id="@+id/controler_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/no_color"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_controller_next" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/controler_unclock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/no_color"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_controller_unlock" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

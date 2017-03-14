@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- showUserInfoSlidingMenu -->
+
+    <!-- upload -->
+    <string name="Text_uploadingListinitper">等待上传</string>
+
+    <!-- video -->
+    <string name="downloadDeletetip">提示</string>
+
+    <!-- login / register -->
+    <string name="showUserlogin">用户登录</string>
+    <string name="LoginButton">登录</string>
+    <string name="LoginSuccess">登录成功！</string>
+    <string name="RegisterButton">注册</string>
+    <string name="RegisterPasswordlimit">密码必须为大于六位小于等于8位的数字与字符组合而成！</string>
+    <string name="RegisterUsernamelimit">用户名不能为空！</string>
+
+    <string name="app_name">3D易播</string>
+    <string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">发现新版本：</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+    <string name="menu_autonext">自动播放下一个</string>
+    <string name="delete_ensure">要删除所选内容吗？</string>
+    <string name="delete_dir">确定删除</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="cancel_all">全部删除</string>
+    <string name="error">警告</string>
+    <string name="error_message">视频格式错误，停止！</string>
+    <string name="tab_video">本地视频</string>
+    <string name="tab_image">本地图片</string>
+    <string name="exit_toast">再按一次 退出程序</string>
+    <string name="default_version">V1.0</string>
+    <string name="guanwang">官方网址：www.evistek.com</string>
+    <string name="weixin">官方微信：EVISTEK</string>
+    <string name="copyright">©2010&#8211;2016 上海易维视科技股份有限公司</string>
+    <string name="loading">加载中...</string>
+    <string name="no_more_image">没有更多图片...</string>
+    <string name="image">图片</string>
+    <string name="net_not_available">网络连接不可用，请检查!</string>
+    <string name="load_fail_images">图片加载失败！</string>
+
+    <string name="download_title">下载管理</string>
+    <string name="download_downloading">正在下载</string>
+    <string name="download_waiting">等待下载</string>
+    <string name="download_finish">下载完成</string>
+    <string name="download_cancelled">已取消</string>
+    <string name="download_paused">已暂停</string>
+    <string name="download_notification">已完成  %1$d 个,  一共  %2$d 个</string>
+    <string name="download_add_task">添加下载</string>
+    <string name="download_empty">没有下载任务</string>
+    <string name="download_joined">已添加</string>
+    <string name="thirdparty_login">使用第三方账号登陆</string>
+    <!-- for v2 -->
+    <string name="movie">3D电影</string>
+    <string name="mv">MV</string>
+    <string name="vr">VR全景</string>
+    <string name="tabname_home">首页</string>
+    <string name="tabname_video">视频</string>
+    <string name="tabname_image">图片</string>
+    <string name="tabname_about">我的</string>
+    <string name="detail_title">详情</string>
+    <string name="detail_actors">主演:&#160;&#160;</string>
+    <string name="detail_time">时间:&#160;&#160;</string>
+    <string name="detail_location">地区:&#160;&#160;</string>
+    <string name="detail_play_count">播放:&#160;&#160;</string>
+    <string name="detail_play_count_suffix">&#160;次播放</string>
+    <string name="detail_intro">简介</string>
+    <string name="network_unavailable">网络异常</string>
+    <string name="detail_alert_dialog_content">请检查网络连接后，重新尝试</string>
+    <string name="try_to_refresh">下拉刷新试试</string>
+    <string name="end_tag_name">~~没有更多了~~</string>
+
+    <string name="v2_clicktologin">立即登录</string>
+    <string name="v2_clicktologout">退出登录</string>
+    <string name="v2_logout_tips">是否退出当前用户</string>
+    <string name="v2_history">观看历史</string>
+    <string name="v2_save">我的收藏</string>
+    <string name="v2_download">视频缓存</string>
+    <string name="v2_aboutus">关于我们</string>
+    <string name="v2_checkandupdate">检查更新</string>
+
+    <string name="v2_user_title_select">全选</string>
+    <string name="v2_user_title_delete">删除</string>
+    <string name="v2_user_title_edit">编辑</string>
+    <string name="v2_user_title_cancel">取消</string>
+    <string name="v2_user_listitem_time">时长:</string>
+
+    <string name="not_login">未登录</string>
+    <string name="need_login">请先登录，再执行该操作</string>
+    <string name="v2_insert_userName">用户名</string>
+    <string name="v2_insert_password">密码</string>
+    <string name="v2_choose_no">请选择要删除的记录！</string>
+    <string name="empty_favorite_no">还没有收藏记录</string>
+    <string name="empty_playrecord_no">还没有播放记录</string>
+    <string name="v2_current_version">当前版本</string>
+    <string name="v2_local_resource">本地资源</string>
+    <string name="v2_need_device_msg">选择VR眼镜型号,以获得最佳体验\n\n您也可以稍后在\"我的设备\"中选择.</string>
+    <string name="v2_need_device_title">设备设置</string>
+    <string name="v2_go_setting">去设置</string>
+    <string name="v2_continue">继续</string>
+    <string name="delete_fail">删除失败</string>
+    <string name="delete_fail_msg">无法删除该文件，请手动删除</string>
+
+    <string name="soft_version_limited_title">版本不兼容</string>
+    <string name="soft_version_limited">当前客户端版本不兼容，无法访问服务器!</string>
+
+    <string name="log_warning">实名制整改，暂时无法注册，请使用QQ登陆</string>
+    <string name="slide_mode">幻灯片模式</string>
+    <string name="select_images">请选择用于播放图片！"</string>
+    <string name="compatibility_title">设备兼容性</string>
+    <string name="compatibility_msg">当前设备不是裸眼3D设备，或者与本软件不兼容，无法播放</string>
+
+    <string name="buffering">正在缓冲，请稍候...</string>
+    <string name="player_init_fail">播放器初始化失败</string>
+    <string name="loading_fail">视频加载失败！</string>
+
+    <string name="or">或者</string>
+
+</resources>

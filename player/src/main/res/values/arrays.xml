@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="menu">
+        <item>Frame Packing</item>
+        <item>Eye Tracking</item>
+    </string-array>
+    <string-array name="menuLR">
+        <item>Left-Right</item>
+        <item>Right-Left</item>
+    </string-array>
+    <string-array name="menuOnOff">
+        <item>Disable</item>
+        <item>Enable</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<devices>
+    <!--Dromax-->
+    <device>
+        <model>ZM101P</model>
+        <node>/proc/driver/lcm_3d</node>
+        <cot>0.3901</cot>
+        <cover>6.4960</cover>
+        <offset>-0.2000</offset>
+        <slope>true</slope>
+        <framePacking>1</framePacking>
+        <drawMode>0</drawMode>
+        <sizeType>1</sizeType>
+    </device>
+
+    <!--Tyloo-->
+    <device>
+        <model>android</model>
+        <node>/dev/qs3dgrating</node>
+        <cot>0</cot>
+        <cover>0</cover>
+        <offset>0</offset>
+        <slope>false</slope>
+        <framePacking>1</framePacking>
+        <drawMode>0</drawMode>
+        <sizeType>0</sizeType>
+    </device>
+
+    <!--Truly-->
+    <device>
+        <model>3D_Tablet</model>
+        <node>/dev/mi3d_tn_ctrl</node>
+        <cot>0</cot>
+        <cover>0</cover>
+        <offset>0</offset>
+        <slope>false</slope>
+        <framePacking>1</framePacking>
+        <drawMode>1</drawMode>
+        <sizeType>0</sizeType>
+    </device>
+
+    <!--See-->
+    <device>
+        <model>See K550</model>
+        <node>null</node>
+        <cot>0</cot>
+        <cover>0</cover>
+        <offset>0</offset>
+        <slope>false</slope>
+        <framePacking>0</framePacking>
+        <drawMode>1</drawMode>
+        <sizeType>0</sizeType>
+    </device>
+
+     <device>
+        <model>See K600</model>
+        <node>null</node>
+        <cot>0</cot>
+        <cover>0</cover>
+        <offset>0</offset>
+        <slope>false</slope>
+        <framePacking>1</framePacking>
+        <drawMode>1</drawMode>
+        <sizeType>0</sizeType>
+    </device>
+
+    <device>
+        <model>M7</model>
+        <node>null</node>
+        <cot>0</cot>
+        <cover>0</cover>
+        <offset>0</offset>
+        <slope>false</slope>
+        <framePacking>1</framePacking>
+        <drawMode>1</drawMode>
+        <sizeType>0</sizeType>
+    </device>
+</devices>

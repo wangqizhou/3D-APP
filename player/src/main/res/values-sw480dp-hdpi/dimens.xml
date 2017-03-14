@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="extra_window_height">90px</dimen>
+    <dimen name="control_window_height">220px</dimen>
+    <dimen name="extra_menu_width">360px</dimen>
+</resources>
